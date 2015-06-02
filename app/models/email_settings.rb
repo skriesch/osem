@@ -1,7 +1,7 @@
 class EmailSettings < ActiveRecord::Base
   attr_accessible :send_on_registration, :send_on_accepted, :send_on_rejected,
                   :send_on_confirmed_without_registration, :registration_email_template,
-                  :accepted_email_template, :rejected_email_template, :confirmed_email_template,
+                  :accepted_body, :rejected_body, :confirmed_body,
                   :registration_subject, :accepted_subject, :rejected_subject,
                   :confirmed_without_registration_subject,
                   :send_on_updated_conference_dates, :updated_conference_dates_subject,
